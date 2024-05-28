@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Low Stock Products</title>
+</head>
+<body>
+    <h1>Products with Low Stock Levels that Haven't Sold in the Past Month</h1>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

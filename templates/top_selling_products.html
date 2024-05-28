@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Top 5 Best-Selling Products</title>
+</head>
+<body>
+    <h1>Top 5 Best-Selling Products in the Last Quarter</h1>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Total Sold</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

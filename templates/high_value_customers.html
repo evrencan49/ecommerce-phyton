@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>High Value Customers</title>
+</head>
+<body>
+    <h1>High Value Customers (Spent Over a Certain Amount in the Past Year)</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Total Spent</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

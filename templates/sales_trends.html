@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sales Trends by Month</title>
+</head>
+<body>
+    <h1>Sales Trends by Month for the Past Year</h1>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Total Sales</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

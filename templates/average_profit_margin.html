@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Average Profit Margin by Category</title>
+</head>
+<body>
+    <h1>Average Profit Margin for Each Product Category</h1>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Average Profit Margin</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

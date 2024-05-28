@@ -7,9 +7,9 @@ app = Flask(__name__)
 def get_db_connection():
     connection = mysql.connector.connect(
         host='localhost',
-        user='yourusername',
-        password='yourpassword',
-        database='yourdatabase'
+        user='root',
+        password='0c&C@Wy2s',
+        database='ecommercems'
     )
     return connection
 

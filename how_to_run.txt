@@ -1,5 +1,5 @@
 1. Clone the repository:
-    git clone <your-repository-url>
+    git clone https://github.com/evrencan49/ecommerce-phyton.git
 2. Navigate to the project directory:
     cd <your-repository-directory>
 3. Create a virtual environment:

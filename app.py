@@ -8,7 +8,7 @@ def get_db_connection():
     connection = mysql.connector.connect(
         host='localhost',
         user='root',
-        password='password',
+        password='0c&C@Wy2s',
         database='ecommercems'
     )
     return connection
@@ -90,7 +90,9 @@ def top_selling_products():
     results = cursor.fetchall()
     cursor.close()
     connection.close()
+    print("Top Selling Products Query Results:", results)  # Debug print
     return render_template('top_selling_products.html', results=results)
+
 
 # Query 2: Customers Who Spent Over a Certain Amount in the Past Year
 @app.route('/high_value_customers')
@@ -115,7 +117,8 @@ def high_value_customers():
 @app.route('/average_profit_margin')
 def average_profit_margin():
     query = """
-    SELECT c.name AS category_name, AVG(p.price - p.cost) AS avg_profit_margin
+    SELECT c.name AS category_name, 
+    AVG(p.price - p.cost_price) AS avg_profit_margin
     FROM product p
     JOIN product_category pc ON p.product_id = pc.product_id
     JOIN category c ON pc.category_id = c.category_id

@@ -1,21 +1,26 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Top 5 Best-Selling Products</title>
+    <meta charset="UTF-8">
+    <title>Top Selling Products</title>
 </head>
 <body>
-    <h1>Top 5 Best-Selling Products in the Last Quarter</h1>
+    <h1>Top Selling Products</h1>
     <table>
-        <tr>
-            <th>Product Name</th>
-            <th>Total Sold</th>
-        </tr>
-        {% for result in results %}
-        <tr>
-            <td>{{ result[0] }}</td>
-            <td>{{ result[1] }}</td>
-        </tr>
-        {% endfor %}
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Total Quantity Sold</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result[0] }}</td>
+                <td>{{ result[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
 </body>
 </html>

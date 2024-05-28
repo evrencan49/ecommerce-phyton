@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product List</title>
+    <title>E-Commerce Management System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Product List</h1>
+    <h1>E-Commerce Management System</h1>
+    <h2>Product List</h2>
     <a href="{{ url_for('add_product') }}">Add New Product</a>
     <table>
         <tr>
@@ -31,5 +32,13 @@
         </tr>
         {% endfor %}
     </table>
+    <h2>Reports</h2>
+    <ul>
+        <li><a href="{{ url_for('top_selling_products') }}">Top Selling Products</a></li>
+        <li><a href="{{ url_for('high_value_customers') }}">High Value Customers</a></li>
+        <li><a href="{{ url_for('average_profit_margin') }}">Average Profit Margin by Category</a></li>
+        <li><a href="{{ url_for('low_stock_products') }}">Low Stock Products</a></li>
+        <li><a href="{{ url_for('sales_trends') }}">Sales Trends</a></li>
+    </ul>
 </body>
 </html>

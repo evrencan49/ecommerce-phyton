@@ -1,0 +1,16 @@
+1. Clone the repository:
+    git clone <your-repository-url>
+2. Navigate to the project directory:
+    cd <your-repository-directory>
+3. Create a virtual environment:
+    python -m venv venv
+4. Activate the virtual environment:
+    venv\Scripts\activate
+5. Install the dependencies:
+    pip install -r requirements.txt
+6. Verify Flask installation:
+    pip list | findstr Flask
+7. Update the database connection details in app.py.
+8. Run the Flask application:
+    flask run
+9. Open a web browser and go to http://127.0.0.1:5000/
